@@ -1,0 +1,15 @@
+gitignore
+# 编译生成的文件
+*.exe
+*.dll
+*.obj
+*.pdb
+*.class
+bin/
+obj/
+Debug/
+Release/
+/dist/
+/build/
+
+# 系统文件
