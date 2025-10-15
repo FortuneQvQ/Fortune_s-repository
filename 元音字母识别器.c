@@ -4,7 +4,7 @@
 int main(void)
 {
 start:
-	printf("ÊäÈëÒ»¸ö¾ä×Ó:");
+	printf("è¾“å…¥ä¸€ä¸ªå¥å­:");
 	scanf_s("");
 	char c; int n=0;
 	for (;;)
@@ -15,6 +15,6 @@ start:
 		else if (c == '\n')
 			break;
 	}
-	printf("ÓĞ%d¸öÔªÒô×ÖÄ¸\n", n);
+	printf("æœ‰%dä¸ªå…ƒéŸ³å­—æ¯\n", n);
 	goto start;
 }
