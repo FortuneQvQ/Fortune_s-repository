@@ -4,9 +4,9 @@
 int main(void)
 {
 	int lx,lxz, y; float q[5] = { cs,cs,cs,cs,cs };
-	printf("年利率、多少年:\n");
+	printf("脛锚脌没脗脢隆垄露脿脡脵脛锚:\n");
 	scanf_s(" %d %d" ,&lx, &y);
-	printf("年\t");
+	printf("脛锚\t");
 	for (int i = 0; i <= 4; i++)
 	{
 		printf("  %d%%\t",lx+i);
@@ -25,3 +25,4 @@ int main(void)
 	}
 
 }
+
