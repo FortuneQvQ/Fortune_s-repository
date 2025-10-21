@@ -3,7 +3,7 @@
 #include <stdlib.h>
 #include <stdbool.h>
 
-
+//generate a random path on the"map"
 int main(void)
 {
 	int map[10][10];
@@ -88,3 +88,4 @@ int main(void)
 		printf("\n");
 	}
 }
+
