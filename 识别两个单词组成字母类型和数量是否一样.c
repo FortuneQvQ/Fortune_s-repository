@@ -8,7 +8,7 @@ int main(void)
 	scanf_s(" ");
 	for (;;)
 	{
-		c = toupper(getchar());
+		c = tolower(getchar());
 		for (int i = 0; i <= 25; i++)
 		{
 			if (c == 'a' + i)
@@ -20,7 +20,7 @@ int main(void)
 	scanf_s(" ");
 	for (;;)
 	{
-		c = toupper(getchar()0;
+		c = tolower(getchar()0;
 		for (int i = 0; i <= 25; i++)
 		{
 			if (c == 'a' + i)
@@ -38,4 +38,5 @@ int main(void)
 		}
 	}
 	printf("是的");
+
 }
