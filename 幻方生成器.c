@@ -1,5 +1,5 @@
 ﻿#include <stdio.h>
-#define n 3
+#define n 3//修改n的数值来更改幻方的边长
 
 int main(void)
 {
@@ -24,4 +24,5 @@ int main(void)
 		}
 		printf("\n");
 	}
+
 }
