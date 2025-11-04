@@ -6,7 +6,7 @@
 char contents[STACK_SIZE]; 
 int top = 0; 
 
-//Çå¿ÕÕ»
+//æ¸…ç©ºæ ˆ
 void make_empty(void) 
 { 
  top = 0; 
@@ -22,21 +22,21 @@ bool is_full(void)
  return top == STACK_SIZE; 
 } 
 
-//Õ»Òç³ö
+//æ ˆæº¢å‡º
 void stack_overflow(void)
 {
     printf("Error: Stack overflow\n");
     exit(EXIT_FAILURE);
 }
 
-//Õ»¿Õ
+//æ ˆç©º
 void stack_underflow(void)
 {
     printf("Error: Stack underflow\n");
     exit(EXIT_FAILURE);
 }
 
-//ÏòÕ»ÖĞÌî³ä
+//å‘æ ˆä¸­å¡«å……
 void push(char i) 
 { 
  if (is_full()) 
@@ -47,7 +47,7 @@ void push(char i)
  }
 } 
 
-///´ÓÕ»ÖĞÌáÈ¡
+///ä»æ ˆä¸­æå–
 char pop(void) 
 { 
  if (is_empty()) 
@@ -60,3 +60,4 @@ int main(void)
 {
 	
 }
+
