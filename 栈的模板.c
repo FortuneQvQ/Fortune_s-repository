@@ -43,6 +43,7 @@ int peek(void)
 	if(is_empty())
 	{
 		printf("Stack is empty!");
+		exit(EXIT_FAILIURE);
 	}
 	return *(top-1);
 }
@@ -61,3 +62,4 @@ void clear(void)
 {
 	top=stack;
 }
+
