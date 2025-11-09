@@ -1,64 +1,63 @@
 #include <stdio.h>
-#include <stdbool.h> /* C99 only */ 
 #include <stdlib.h>
+#include <stdbool.h>
+#define MAX_SIZE 100
 
-#define STACK_SIZE 100
+int stack[MAX_SIZE];
+int *top=stack;
 
-int contents[100];
-int top=0;
-
-void make_empty(void);     // 清空栈
-bool is_empty(void);       // 检查栈是否为空
-bool is_full(void);        // 检查栈是否已满
-void push(int number);     // 压栈操作
-int pop(void);             // 弹栈操作
-int peek(void);			   // 查看栈顶元素（不弹出）
+void push();
+int pop(void);
+int peek();
+bool is_empty();
+bool is_full();
+void clear();
 
 int main(void)
 {
 	
 }
-void make_empty(void)
-{
-	top=0;
-}
 
-bool is_empty(void) 
-{
-	return top==0;
-}
-
-bool is_full(void)
-{
-	return top==STACK_SIZE;
-}
-
-void push(int number)
+void push(int a)
 {
 	if(is_full())
 	{
-		printf("栈已满，无法压入新元素!\n");
+		printf("Stack is full!");
 		exit(EXIT_FAILURE);
 	}
-	contents[top++]=number;
+	*top++=a;
 }
 
 int pop(void)
 {
 	if(is_empty())
 	{
-		printf("栈已空，无法弹出数据!\n");
+		printf("Stack is empty!");
 		exit(EXIT_FAILURE);
 	}
-	return contents[--top];
+	return *--top;
 }
 
 int peek(void)
 {
 	if(is_empty())
 	{
-		printf("栈是空的!\n");
-		exit(EXIT_FAILURE);
+		printf("Stack is empty!");
 	}
-	return contents[top-1];
+	return *(top-1);
+}
+
+bool is_empty(void)
+{
+	return top==&stack[0];
+}
+
+bool is_full(void)
+{
+	return top==&stack[MAX_SIZE];
+}
+
+void clear(void)
+{
+	top=stack;
 }
