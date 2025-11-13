@@ -3,7 +3,7 @@
 
 int main(void)
 {
-	printf("你想寻找不大于多少的质数?\n");
+	printf("浣犳兂瀵绘壘涓嶅ぇ浜庡灏戠殑璐ㄦ暟?\n");
 	int n;
 	scanf("%d",&n);
 	bool is_prime[n+1];
@@ -28,7 +28,7 @@ int main(void)
 			break;
 		}
 	}
-	printf("找到这些质数:\n");
+	printf("鎵惧埌杩欎簺璐ㄦ暟:\n");
 	for(int i=2;i<=n;i++)
 	{
 		if(is_prime[i])
