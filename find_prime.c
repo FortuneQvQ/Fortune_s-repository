@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <stdbool.h>
-
+//使用方式：在exe文件所在目录下打开命令行输入find_prime [质数寻找范围（小于它的质数都将被找到）]
 int main(int argc,char* argv[])
 {	
 	(void)argc;
@@ -28,7 +28,7 @@ int main(int argc,char* argv[])
 			break;
 		}
 	}
-	printf("�ҵ�%d������:\n",count);
+	printf("ÕÒµ½%d¸öÖÊÊý:\n",count);
 	for(int i=2;i<=n;i++)
 	{
 		if(is_prime[i])
@@ -37,3 +37,4 @@ int main(int argc,char* argv[])
 		}
 	}
 }
+
