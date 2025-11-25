@@ -27,7 +27,8 @@ int main(void)
     int numerator;
     int denominator;
     int digits;
-    printf("°´ÕÕ¡°±»³ıÊı/³ıÊı£¬±£ÁôĞ¡ÊıÎ»Êı¡±£¨ÖĞÎÄ¶ººÅ£©µÄ¸ñÊ½ÊäÈë£¬ÎÒ»á°ïÄã¼ÆËã³ö³ı·¨½á¹ûXD");
-    scanf("%d/%d£¬%d",&numerator,&denominator,&digits);
+    printf("æŒ‰ç…§â€œè¢«é™¤æ•°/é™¤æ•°ï¼Œä¿ç•™å°æ•°ä½æ•°â€ï¼ˆä¸­æ–‡é€—å·ï¼‰çš„æ ¼å¼è¾“å…¥ï¼Œæˆ‘ä¼šå¸®ä½ è®¡ç®—å‡ºé™¤æ³•ç»“æœXD");
+    scanf("%d/%dï¼Œ%d",&numerator,&denominator,&digits);
     print_demical(numerator,denominator,digits);
 }
+
